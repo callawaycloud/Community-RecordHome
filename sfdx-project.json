@@ -1,12 +1,19 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "communityRecordHome",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "communityRecordHome",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "communityRecordHome": "0Ho5e000000CanHCAS",
+        "communityRecordHome@0.1.0-1": "04t5e000000e1gWAAQ"
     }
-  ],
-  "name": "communityRecordHome",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0"
 }

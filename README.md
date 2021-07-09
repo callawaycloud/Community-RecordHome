@@ -10,10 +10,10 @@ This LWC lets us specify which fields to display instead of having to modify the
 ## 📦 Install
 
 **via sfdx-cli**
-`sfdx force:package:install --package 04t5e000000dcJkAAI -u your@org.user`
+`sfdx force:package:install --package 04t5e000000e1gWAAQ -u your@org.user`
 
 **via url**
-login and navigate to [`/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI`](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI). Choose `Install for: Admin Only`.
+login and navigate to [`/packaging/installPackage.apexp?p0=04t5e000000e1gWAAQ`](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e000000e1gWAAQ). Choose `Install for: Admin Only`.
 
 ## 🔨 Usage
 
