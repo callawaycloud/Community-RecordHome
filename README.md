@@ -5,7 +5,7 @@ An Experience Cloud component that allows for more customization than the OOTB R
 The OOTB Record Banner is set using the Compact Layout of the object; the compact layout assignment is done by record type - we cannot change the compact layout in experience cloud without also changing the internal view for that record type.
 This LWC lets us specify which fields to display instead of having to modify the compact layout of the record type for all users.
 
-![Imgur](https://i.imgur.com/rQo2Gyy.png)
+![Imgur](https://i.imgur.com/DJl6u8I.png)
 
 ## 📦 Install
 
@@ -38,3 +38,6 @@ login and navigate to [`/packaging/installPackage.apexp?p0=04t5e000000e1gWAAQ`](
 
 - You have the ability to toggle the display of an icon (leave it blank to not display one).
 - Reference the list of supported SLDS icons at https://www.lightningdesignsystem.com/icons/
+
+## Future Improvements
+1. There are some quirks with lookup fields on Standard Objects
