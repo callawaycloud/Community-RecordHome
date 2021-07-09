@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record Home</masterLabel>
+    <description>Used as a banner on a record detail page.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+        name="recordId"
+        label="Record Id"
+        type="String"
+        default="{!recordId}"
+        description="The Id of the record we will pull data from."
+        required="true"
+      />
+            <property
+        name="objectApiName"
+        label="Object API Name"
+        type="String"
+        placeholder="Account"
+        description="The API Name of the object."
+        required="true"
+      />
+            <property
+        name="recordNameField"
+        label="Field to Display Name of Record"
+        type="String"
+        placeholder="Name"
+        description="The API Name of the field that is used to display the name of the record."
+        required="true"
+      />
+            <property
+        name="fieldApiNames"
+        label="Field API Names"
+        type="String"
+        placeholder="Type;Phone;Website"
+        description="A comma/semicolon/space separated list of Field API Names."
+        required="true"
+      />
+            <property
+        name="sldsIcon"
+        label="SLDS Icon"
+        type="String"
+        placeholder="standard:account"
+        description="The path to the icon from the SLDS icon library."
+      />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

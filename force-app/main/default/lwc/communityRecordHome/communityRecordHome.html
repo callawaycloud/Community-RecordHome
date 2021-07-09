@@ -1,0 +1,56 @@
+<template>
+  <div class="slds-page-header slds-page-header_record-home">
+    <div class="slds-page-header__row">
+      <div class="slds-page-header__col-title">
+        <div class="slds-media">
+          <!-- Icon -->
+          <template if:true={sldsIcon}>
+            <div class="slds-media__figure">
+              <lightning-icon
+                icon-name={sldsIcon}
+                alternative-text="ObjectIcon"
+                title="ObjectIcon"
+              ></lightning-icon>
+            </div>
+          </template>
+
+          <!-- Object name and Record Name -->
+          <div class="slds-media__body">
+            <div class="slds-page-header__name">
+              <div class="slds-page-header__name-title">
+                <h1>
+                  <span>{objectLabel}</span>
+                  <span
+                    class="slds-page-header__title slds-truncate"
+                    title={recordName}
+                    >{recordName}</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <lightning-record-view-form
+      record-id={recordId}
+      object-api-name={objectApiName}
+      density="comfy"
+    >
+      <div class="slds-page-header__row slds-page-header__row_gutters">
+        <div class="slds-page-header__col-details">
+          <!-- Iterate over fields to display -->
+          <ul class="slds-page-header__detail-row">
+            <template for:each={fieldApiNamesSplit} for:item="field">
+              <li key={field} class="slds-page-header__detail-block">
+                <lightning-output-field field-name={field}>
+                </lightning-output-field>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </div>
+    </lightning-record-view-form>
+  </div>
+</template>
